@@ -1,4 +1,5 @@
 @echo off
+REM this is just for building midnight to 12am to avoid the auto-time bodge to the exe file
 
 set CommonCompilerFlags=-MT -nologo -Gm- -GR- -EHa- -Oi -WX -W4 -wd4459 -wd4456 -wd4201 -wd4100 -wd4189 -wd4211 -DHANDMADE_INTERNAL=1 -DHANDMADE_SLOW=1 -DWIN32_HANDMADE=1 -FC -Zi
 set CommonLinkerFlags= -incremental:no -opt:ref user32.lib Gdi32.lib winmm.lib
